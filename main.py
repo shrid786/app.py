@@ -5,14 +5,13 @@ import joblib
 # Load the saved model
 model = joblib.load('diabetes_rf_model.pkl')
 
-st.title("Diabetes Risk Predictor")
-st.caption("Note: This is an academic project and not a substitute for medical diagnosis.")
+st.title("DIABITIES RISK PREDICTION HEURISTIC")
+st.caption("INDIA IS ALSO CALLED DAIBITIES CAPITAL OF THE WORLD")
 
-# Input fields matching your project's features
-glucose = st.number_input("Glucose", value=148)
-bmi = st.number_input("BMI", value=33.6)
-insulin = st.number_input("Insulin", value=125)
-age = st.number_input("Age", value=50)
+GLUCOSE = st.number_input("Glucose", value=148)
+BODY MASS INDEX = st.number_input("BMI", value=33.6)
+INSULIN= st.number_input("Insulin", value=125)
+AGE = st.number_input("Age", value=50)
 
 if st.button("Predict Risk"):
     # Format input exactly as done in Colab
