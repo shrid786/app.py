@@ -5,7 +5,7 @@ import joblib
 
 
 st.set_page_config(
-    page_title="Diabetes AI Predictor",
+    page_title="DIABETES PREDICTOR",
     page_icon="🩺",
     layout="wide"
 )
@@ -58,26 +58,22 @@ except Exception as e:
 
 # ---------------- SIDEBAR ----------------
 with st.sidebar:
-    st.title("🩺 Diabetes AI")
-    st.caption("Machine Learning Health Screening")
+    st.title("🩺 KNOW YOUR RISK")
+    st.caption("SCREENING PLATFORM")
 
     st.divider()
 
-    st.subheader("About this project")
+    st.subheader("ABOUT THIS APPLICATION")
 
     st.write(
         "This application uses a Random Forest "
         "Classifier to estimate diabetes risk "
         "from four input features."
     )
-
-    st.info(
-        "This is an educational AI project, "
-        "not a medical diagnostic tool."
     )
 
     st.divider()
-    st.caption("Developed using Python & Streamlit")
+    st.caption("Developed using Python")
 
 # ---------------- HEADER ----------------
 st.markdown(
