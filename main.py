@@ -11,39 +11,79 @@ st.set_page_config(
 )
 
 
+
+       
+# ---------------- CUSTOM CSS ----------------
 st.markdown("""
 <style>
-    .stApp {
-        background-color: #F4F7FB;
-    }
 
-    .main-title {
-        font-size: 36px;
-        font-weight: 800;
-        color: #17365D;
-    }
+/* Main background */
+.stApp {
+    color: #FFFFFF;
+}
 
-    .subtitle {
-        color: #64748B;
-        font-size: 16px;
-    }
+/* Main headings */
+.stApp h1,
+.stApp h2,
+.stApp h3,
+.stApp h4 {
+    color: #FFFFFF !important;
+    font-weight: 700;
+}
 
-    div.stButton > button {
-        background-color: #176B87;
-        color: white;
-        border-radius: 10px;
-        height: 48px;
-        font-weight: bold;
-        width: 100%;
-        border: none;
-    }
+/* Main text */
+.stApp p,
+.stApp label,
+.stApp li {
+    color: #E2EAF5 !important;
+}
 
-    div.stButton > button:hover {
-        background-color: #12566D;
-        color: white;
-    }
+/* Captions */
+[data-testid="stCaptionContainer"] p {
+    color: #B8C7D9 !important;
+}
+
+/* Input labels */
+[data-testid="stWidgetLabel"] p {
+    color: #FFFFFF !important;
+}
+
+/* Input boxes */
+.stNumberInput input {
+    background-color: #172B45 !important;
+    color: #FFFFFF !important;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #050F23;
+}
+
+/* Buttons */
+div.stButton > button {
+    background-color: #087E9B;
+    color: white !important;
+    border-radius: 10px;
+    height: 48px;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+}
+
+/* Button hover */
+div.stButton > button:hover {
+    background-color: #06A6C7;
+    color: white !important;
+}
+
+/* Links */
+.stApp a {
+    color: #38BDF8 !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
+
 
 # ---------------- LOAD MODEL ----------------
 @st.cache_resource
