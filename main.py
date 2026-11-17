@@ -239,7 +239,35 @@ if submitted:
 # ---------------- FOOTER ----------------
 st.divider()
 
+import base64
+
+def set_background(image_file):
+    with open(image_file, "rb") as f:
+        encoded = base64.b64encode(f.read()).decode()
+
+    st.markdown(f"""
+    <style>
+    .stApp {{
+        background:
+        linear-gradient(
+            rgba(240, 247, 255, 0.88),
+            rgba(240, 247, 255, 0.88)
+        ),
+        url("data:image/jpeg;base64,{encoded}");
+
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }}
+    </style>
+    """, unsafe_allow_html=True)
+
+set_background("image_file.jpg")
+
+
+
+
 st.caption(
-    "Diabetes AI Predictor | Built with Python, "
-    "Streamlit, Pandas and Random Forest"
+    "Diabetes Predictor | Built with Python, "
+    "Pandas and Random Forest"
 )
