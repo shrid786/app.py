@@ -9,7 +9,7 @@ st.title("DIABITIES RISK PREDICTION HEURISTIC")
 st.caption("INDIA IS ALSO CALLED DAIBITIES CAPITAL OF THE WORLD")
 
 GLUCOSE = st.number_input("Glucose", value=148)
-BODY MASS INDEX = st.number_input("BMI", value=33.6)
+BODY_MASS_INDEX = st.number_input("BMI", value=33.6)
 INSULIN= st.number_input("Insulin", value=125)
 AGE = st.number_input("Age", value=50)
 
