@@ -70,7 +70,7 @@ with st.sidebar:
         "Classifier to estimate diabetes risk "
         "from four input features."
     )
-    )
+    
 
     st.divider()
     st.caption("Developed using Python")
